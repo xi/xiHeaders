@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "xiHeaders",
+  "author": "Tobias Bengfort",
+  "homepage_url": "https://github.com/xi/xiHeaders",
+  "description": "modify request headers",
+  "version": "0.0.0",
+  "browser_action": {
+    "default_title": "xiHeaders",
+    "default_icon": "icon.svg"
+  },
+  "icons": {
+    "48": "icon.svg"
+  },
+  "background": {
+    "scripts": ["src/bg.js"],
+    "persistent": false,
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "src/settings.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

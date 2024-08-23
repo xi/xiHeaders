@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+form {
+	block-size: 100vb;
+	display: grid;
+	grid-template-rows: 1fr min-content;
+	grid-template-columns: 1fr;
+	grid-gap: 0.5em;
+	padding: 2em;
+}
+
+textarea {
+	block-size: 100%;
+	resize: none;
+}
+
+button {
+	padding-block: 0.5em;
+	padding-inline: 2em;
+	justify-self: end;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+	}
+}
