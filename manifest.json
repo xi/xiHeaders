@@ -26,5 +26,10 @@
     "webRequest",
     "webRequestBlocking",
     "<all_urls>"
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e9f94aa2-686b-405b-884c-69be4dfe993b}"
+    }
+  }
 }
