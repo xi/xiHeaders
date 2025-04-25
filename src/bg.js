@@ -38,6 +38,6 @@ browser.webRequest.onBeforeSendHeaders.addListener(async details => {
     types: ['main_frame'],
 }, ['blocking', 'requestHeaders']);
 
-browser.browserAction.onClicked.addListener(() => {
+browser.action.onClicked.addListener(() => {
     browser.runtime.openOptionsPage();
 });
