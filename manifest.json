@@ -6,11 +6,11 @@
   "description": "modify request headers",
   "version": "0.0.0",
   "browser_action": {
-    "default_title": "xiHeaders",
-    "default_icon": "icon.svg"
+    "default_title": "xiHeaders"
   },
   "icons": {
-    "48": "icon.svg"
+    "32": "icon.svg",
+    "64": "icon.svg"
   },
   "background": {
     "scripts": ["src/bg.js"],
