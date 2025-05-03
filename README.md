@@ -7,11 +7,11 @@ extremely simple (~100 lines of code).
 
 Rules are defined as a JSON. Each rule has the following properties:
 
--   pattern: the URL pattern this rule applies to. Patterns can include `*` as
+-   `pattern`: the URL pattern this rule applies to. Patterns can include `*` as
     a wildcard.
--   header: the name of the header
--   value: the new value
--   action: add|replace|remove [default: replace]
+-   `header`: the name of the header
+-   `value`: the new value
+-   `action`: `add|replace|remove` [default: `replace`]
 
 ## Examples
 
