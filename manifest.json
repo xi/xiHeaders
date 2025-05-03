@@ -4,7 +4,7 @@
   "author": "Tobias Bengfort",
   "homepage_url": "https://github.com/xi/xiHeaders",
   "description": "modify request headers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "action": {
     "default_title": "xiHeaders"
   },
