@@ -12,6 +12,7 @@ Rules are defined as a JSON. Each rule has the following properties:
 -   `header`: the name of the header
 -   `value`: the new value
 -   `action`: `add|replace|remove` [default: `replace`]
+-   `request_types`: a list of [request types](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/ResourceType) [default: any]
 
 ## Examples
 

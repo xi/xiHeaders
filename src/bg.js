@@ -19,6 +19,9 @@ browser.webRequest.onBeforeSendHeaders.addListener(async details => {
     var data = await browser.storage.local.get('rules');
 
     for (const rule of data.rules) {
+        if (rule.request_types && !rule.request_types.includes(details.type)) {
+            continue;
+        }
         if (glob(details.url, rule.pattern)) {
             if (rule.action !== 'add') {
                 clearHeader(details.requestHeaders, rule.header);
@@ -33,10 +36,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(async details => {
     }
 
     return {requestHeaders: details.requestHeaders};
-}, {
-    urls: ['<all_urls>'],
-    types: ['main_frame'],
-}, ['blocking', 'requestHeaders']);
+}, {urls: ['<all_urls>']}, ['blocking', 'requestHeaders']);
 
 browser.action.onClicked.addListener(() => {
     browser.runtime.openOptionsPage();
